@@ -1,0 +1,109 @@
+/* General Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  flex-direction: column;
+}
+
+#game-container{
+  background-image: url(image/pexels-tobiasbjorkli-1887624.jpg);
+
+}
+
+#dice-game {
+  color:wheat;
+  font-size: larger;
+  font-family:cursive;
+  
+ 
+}
+
+.dice-container {
+  text-align: center;
+  margin-bottom: 20px;
+  display: inline-block;
+  padding-left: 20px;
+ 
+}
+
+.dice {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(199, 193, 193);
+  border: 5px solid wheat;
+  border-radius: 20px;
+  display: grid;
+  transition: transform 10s ease;
+  margin-bottom: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  
+
+  
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  display: none;
+  position: absolute;
+  
+}
+
+.botton {
+  background-color: hsl(215, 56%, 43%);
+  color: white;
+  border-radius: 20%;
+  
+}
+
+#button-container{
+  padding-left: 50px;
+}
+
+.top-left { top: 5px; left: 5px; }
+.top-center { top: 5px; left: 50%; transform: translateX(-50%); }
+.top-right { top: 5px; right: 5px; }
+.middle-left { top: 50%; left: 5px; transform: translateY(-50%); }
+.middle-center { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.middle-right { top: 50%; right: 5px; transform: translateY(-50%); }
+.bottom-left { bottom: 5px; left: 5px; }
+.bottom-center { bottom: 5px; left: 50%; transform: translateX(-50%); }
+.bottom-right { bottom: 5px; right: 5px; }
+
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+      }
+    }
+
+    .jump {
+      animation: jump 10s ease;
+    };
+
+
+    
+    
+h2{
+  background-color: #f0f0f0;
+
+}
+

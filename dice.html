@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dice GAME</title>
+  <link rel="stylesheet" href="dice.css">
+</head>
+<body>
+  <div id="game-container">
+      <div id="dice-game">
+        
+      <span><img src="image/360_F_461214664_3YPpasoxfJZ6JARXgfBH4fQNLp2Fz5E5.jpg" alt="dice"
+    height="80px"/></span>
+    <span><b>DICE GAME</b></span>
+  </div>
+  <div class="dice-container">
+    <!-- User Dice -->
+    
+    <div class="dice" id="user-dice">
+      
+      <div class="dot top-left"></div>
+      <div class="dot top-center"></div>
+      <div class="dot top-right"></div>
+      <div class="dot middle-left"></div>
+      <div class="dot middle-center"></div>
+      <div class="dot middle-right"></div>
+      <div class="dot bottom-left"></div>
+      <div class="dot bottom-center"></div>
+      <div class="dot bottom-right"></div>
+    </div>
+
+    <!-- Computer Dice -->
+    <div class="dice" id="computer-dice">
+      
+      <div class="dot top-left"></div>
+      <div class="dot top-center"></div>
+      <div class="dot top-right"></div>
+      <div class="dot middle-left"></div>
+      <div class="dot middle-center"></div>
+      <div class="dot middle-right"></div>
+      <div class="dot bottom-left"></div>
+      <div class="dot bottom-center"></div>
+      <div class="dot bottom-right"></div>
+    </div>
+  </div>
+
+  <div id="button-container">
+    <button id="jumpBotton" class="botton" onclick=
+    "rollDice();
+    
+    ">PLAY</button>
+
+    <button class="botton" onclick=
+    "resetButton();
+
+  
+    
+    ">Reset Score</button>
+  </div>
+
+  <h2 style="color: wheat; padding-left: 50px;" id="result"></h2> 
+   
+
+  <div style="color: wheat; padding-left: 50px;" id="count-score" >
+   <span id="user-score"></span>
+   <span id="computer-score"></span>
+   <span id="ties"></span>
+  </div>
+
+</div>
+
+
+<h1>SUNTECH</h1>
+
+<audio controls>
+    <source src="audio/Wizkid-Ft.-Brent-Faiyaz---Piece-of-My-Heart.mp3" type="audio/mpeg">
+    <source src="audio.ogg" type="audio/ogg">
+    Your browser does not support the audio tag.
+</audio>
+   
+
+  <script src="script.js"></script>
+</body>
+</html>
