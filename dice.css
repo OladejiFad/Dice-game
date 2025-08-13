@@ -10,8 +10,10 @@ html, body {
   flex-direction: column;
   background: url('image/pexels-tobiasbjorkli-1887624.jpg') no-repeat center center fixed;
   background-size: cover;
+  overflow: hidden; /* Prevent scroll that reveals black bars */
 }
 
+/* Main game container */
 #game-container {
   background: rgba(0,0,0,0.5); /* slight overlay for contrast */
   padding: 20px 40px;
@@ -42,7 +44,7 @@ html, body {
 .dice {
   width: 100px;
   height: 100px;
-  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  background: linear-gradient(145deg, #a615a4, #d4e8e8);
   border-radius: 20px;
   box-shadow: 
     inset -4px -4px 8px rgba(255,255,255,0.8),
@@ -61,6 +63,7 @@ html, body {
   box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4);
 }
 
+/* Dice dots */
 .dot {
   width: 16px;
   height: 16px;
@@ -82,6 +85,7 @@ html, body {
 .bottom-center { bottom: 10px; left: 50%; transform: translateX(-50%); }
 .bottom-right { bottom: 10px; right: 10px; }
 
+/* Dot bounce animation */
 @keyframes jump {
   0% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
@@ -109,11 +113,13 @@ html, body {
   font-size: 1.2rem;
 }
 
+/* Active player highlight */
 .dice.active {
   border-color: #ffdd57;
   box-shadow: 0 0 20px #ffdd57;
 }
 
+/* Dice roll animation */
 @keyframes diceRoll {
   0% { transform: rotate(0deg) scale(1); }
   25% { transform: rotate(20deg) scale(1.1); }
@@ -126,6 +132,7 @@ html, body {
   animation: diceRoll 0.5s ease-in-out;
 }
 
+/* Shake animation */
 @keyframes shakeDice {
   0% { transform: rotate(0deg); }
   25% { transform: rotate(10deg); }
